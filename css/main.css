@@ -54,12 +54,6 @@
     font-style: italic
 }
 
-@font-face {
-    font-family: BitPotion;
-    src: url(../fonts/BitPotion/BitPotionExt.ttf);
-    font-style: normal
-}
-
 *,
 :after,
 :before {
@@ -778,7 +772,7 @@ html #top-button img {
 .intro__icon {    
     image-rendering: -moz-crisp-edges;
     image-rendering: -webkit-crisp-edges;
-    image-rendering: pixelated;
+    image-rendering: smooth;
     image-rendering: crisp-edges;
     width:200px;
     height:200px;
