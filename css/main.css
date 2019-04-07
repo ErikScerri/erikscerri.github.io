@@ -1,204 +1,97 @@
-@font-face {
-    font-family: Raleway;
-    src: url(../fonts/Raleway/Raleway-Light.ttf);
-    font-weight: 300;
-    font-style: normal
-}
-
-@font-face {
-    font-family: Raleway;
-    src: url(../fonts/Raleway/Raleway-LightItalic.ttf);
-    font-weight: 300;
-    font-style: italic
-}
-
-@font-face {
-    font-family: Raleway;
-    src: url(../fonts/Raleway/Raleway-Regular.ttf);
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-family: Raleway;
-    src: url(../fonts/Raleway/Raleway-Italic.ttf);
-    font-weight: 400;
-    font-style: italic
-}
-
-@font-face {
-    font-family: Raleway;
-    src: url(../fonts/Raleway/Raleway-Medium.ttf);
-    font-weight: 500;
-    font-style: normal
-}
-
-@font-face {
-    font-family: Raleway;
-    src: url(../fonts/Raleway/Raleway-MediumItalic.ttf);
-    font-weight: 500;
-    font-style: italic
-}
-
-@font-face {
-    font-family: Raleway;
-    src: url(../fonts/Raleway/Raleway-Bold.ttf);
-    font-weight: 700;
-    font-style: normal
-}
-
-@font-face {
-    font-family: Raleway;
-    src: url(../fonts/Raleway/Raleway-BoldItalic.ttf);
-    font-weight: 700;
-    font-style: italic
-}
-
-@font-face {
-    font-family: Apercu;
-    src: url(../fonts/Apercu/Apercu Pro Regular.otf);
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-family: Apercu;
-    src: url(../fonts/Apercu/Apercu Pro Regular Italic.otf);
-    font-weight: 400;
-    font-style: italic
-}
-
-@font-face {
-    font-family: Apercu;
-    src: url(../fonts/Apercu/Apercu Pro Medium.otf);
-    font-weight: 500;
-    font-style: normal
-}
-
-@font-face {
-    font-family: Apercu;
-    src: url(../fonts/Apercu/Apercu Pro Medium Italic.otf);
-    font-weight: 500;
-    font-style: italic
-}
-
-@font-face {
-    font-family: Apercu;
-    src: url(../fonts/Apercu/Apercu Pro Bold.otf);
-    font-weight: 700;
-    font-style: normal
-}
-
-@font-face {
-    font-family: Apercu;
-    src: url(../fonts/Apercu/Apercu Pro Bold Italic.otf);
-    font-weight: 700;
-    font-style: italic
-}
-
-*,
-:after,
-:before {
+html {
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+    box-sizing: border-box
+}
+
+*,:after,:before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit
 }
 
 ::-moz-selection {
-    background: #fc6
+    background: #ffdc00
 }
 
 ::selection {
-    background: #fc6
+    background: #ffdc00
 }
 
-body,
-html {
+body,html {
     margin: 0;
     padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     background-color: #fff;
     color: #444452;
     font-family: Raleway, "Source Sans Pro", Helvetica, Arial, sans-serif;
-    line-height: 1.5
+    line-height: 1.5;
+    width: 100%
 }
 
-body a,
-html a {
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    text-decoration: none;
-    font-weight: 700;
-    color: #36363c
+body.night,html.night {
+    background-color: #171c28;
+    color: #afafbf
 }
 
-body ul,
-html ul {
-    list-style: none;
-    padding: 0
-}
-
-body strong,
-html strong {
-    font-weight: 700;
-    color: #36363c
-}
-
-body.night,
-html.night {
-    background-color: #191e27;
-    color: #afafbf;
-    font-family: BitPotion, "Source Sans Pro", Helvetica, Arial, sans-serif;
-}
-
-body.night ::-moz-selection,
-html.night ::-moz-selection {
+body.night ::-moz-selection,html.night ::-moz-selection {
     color: #36363c;
-    background: #fc6
+    background: #ffdc00
 }
 
-body.night ::selection,
-html.night ::selection {
+body.night ::selection,html.night ::selection {
     color: #36363c;
-    background: #fc6
+    background: #ffdc00
 }
 
-body.night .pixel-switch-wrapper .sun,
-html.night .pixel-switch-wrapper .sun {
+body.night .switch-wrapper .sun,html.night .switch-wrapper .sun {
     background: url(../img/switch/sun-white.svg) no-repeat center;
     background-size: 100%
 }
 
-body.night .pixel-switch-wrapper .moon,
-html.night .pixel-switch-wrapper .moon {
+body.night .switch-wrapper .moon,html.night .switch-wrapper .moon {
     background: url(../img/switch/moon-white.svg) no-repeat center;
     background-size: 100%
 }
 
-body.night .experience .job__time,
-body.night .footer__copyright,
-body.night .intro,
-body.night .skills .skillz__category__label,
-body.night .status,
-body.night a,
-body.night strong,
-html.night .experience .job__time,
-html.night .footer__copyright,
-html.night .intro,
-html.night .skills .skillz__category__label,
-html.night .status,
-html.night a,
-html.night strong {
+body.night .experience .job__time,body.night .footer__copyright,body.night .intro,body.night .skills .skillz__category__label,body.night .status,body.night a,body.night strong,html.night .experience .job__time,html.night .footer__copyright,html.night .intro,html.night .skills .skillz__category__label,html.night .status,html.night a,html.night strong {
     color: #e7e7e7
 }
 
-body.night .section__content .underline-link:after,
-html.night .section__content .underline-link:after {
+body.night .section__content .underline-link:after,html.night .section__content .underline-link:after {
     background: #e7e7e7
 }
 
-body .emoji,
-html .emoji {
+a {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+    font-weight: 700;
+    color: inherit
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle
+}
+
+strong {
+    font-weight: 700;
+    color: #36363c
+}
+
+.emoji {
     display: inline-block;
     vertical-align: text-top;
     background-size: contain;
@@ -206,8 +99,7 @@ html .emoji {
     background-position: center
 }
 
-body .section,
-html .section {
+.section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -217,53 +109,32 @@ html .section {
     padding: 100px 170px
 }
 
-@media screen and (max-width:1280px) {
-    body .section,
-    html .section {
-        padding: 100px
+@media screen and (max-width: 1280px) {
+    .section {
+        padding:100px
     }
 }
 
-@media screen and (max-width:1024px) {
-    body .section,
-    html .section {
-        padding: 50px
+@media screen and (max-width: 1024px) {
+    .section {
+        padding:50px
     }
 }
 
-@media screen and (max-width:768px) {
-    body .section,
-    html .section {
-        display: block
+@media screen and (max-width: 768px) {
+    .section {
+        display:block
     }
 }
 
-@media screen and (max-width:480px) {
-    body .section,
-    html .section {
-        padding: 50px 35px
+@media screen and (max-width: 480px) {
+    .section {
+        padding:50px 35px
     }
 }
 
-.section__background__portrait {
-    width: 65px;
-    height: 100px;
-    margin-top: 20px;    
-    image-rendering: -moz-crisp-edges;
-    image-rendering: -webkit-crisp-edges;
-    image-rendering: pixelated;
-    image-rendering: crisp-edges;
-}
-
-@media screen and (max-width:768px) {
-    .section__background__portrait {
-        display:none;
-    }
-}
-
-body .section__title,
-html .section__title {
-	font-family: Apercu, "Source Sans Pro", Helvetica, Arial, sans-serif;
+.section__title {
+    font-family: Apercu, "Source Sans Pro", Helvetica, Arial, sans-serif;
     -ms-flex-negative: 0;
     flex-shrink: 0;
 	font-size: 15px;
@@ -276,72 +147,56 @@ html .section__title {
     letter-spacing: 3px
 }
 
-@media screen and (max-width:1024px) {
-    body .section__title,
-    html .section__title {
-        margin-right: 50px
+@media screen and (max-width: 1024px) {
+    .section__title {
+        margin-right:50px
     }
 }
 
-@media screen and (max-width:850px) {
-    body .section__title,
-    html .section__title {
-        width: 150px
+@media screen and (max-width: 850px) {
+    .section__title {
+        width:150px
     }
 }
 
-@media screen and (max-width:768px) {
-    body .section__title,
-    html .section__title {
-        text-align: left;
+@media screen and (max-width: 768px) {
+    .section__title {
+        text-align:left;
         width: auto
     }
 }
 
-body .section__content,
-html .section__content {
+.section__content {
     font-weight: 300;
     font-size: 1rem;
     width: 100%;
     max-width: 650px
 }
 
-.night .section__content {
-    font-weight: 300;
-    font-size: 2rem;
-    width: 100%;
-    max-width: 650px
-}
-
-@media screen and (max-width:768px) {
-    body .section__content,
-    html .section__content {
-        padding-top: 30px;
+@media screen and (max-width: 768px) {
+    .section__content {
+        padding-top:30px;
         padding-left: 50px
     }
 }
 
-@media screen and (max-width:480px) {
-    body .section__content,
-    html .section__content {
-        padding-left: 30px
+@media screen and (max-width: 480px) {
+    .section__content {
+        padding-left:30px
     }
 }
 
-body .section__content p,
-html .section__content p {
+.section__content p {
     margin-top: 0;
     margin-bottom: 25px
 }
 
-body .section__content .underline-link,
-html .section__content .underline-link {
+.section__content .underline-link {
     position: relative;
     display: inline-block
 }
 
-body .section__content .underline-link:after,
-html .section__content .underline-link:after {
+.section__content .underline-link:after {
     position: absolute;
     top: 100%;
     left: 0;
@@ -350,18 +205,15 @@ html .section__content .underline-link:after {
     background: #36363c;
     content: '';
     opacity: 0;
-    -webkit-transition: height .3s, opacity .3s, -webkit-transform .3s;
-    transition: height .3s, opacity .3s, -webkit-transform .3s;
-    transition: height .3s, opacity .3s, transform .3s;
-    transition: height .3s, opacity .3s, transform .3s, -webkit-transform .3s;
+    -webkit-transition: height .3s,opacity .3s,-webkit-transform .3s;
+    transition: height .3s,opacity .3s,-webkit-transform .3s;
+    transition: height .3s,opacity .3s,transform .3s;
+    transition: height .3s,opacity .3s,transform .3s,-webkit-transform .3s;
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px)
 }
 
-body .section__content .underline-link:focus:after,
-body .section__content .underline-link:hover:after,
-html .section__content .underline-link:focus:after,
-html .section__content .underline-link:hover:after {
+.section__content .underline-link:focus:after,.section__content .underline-link:hover:after {
     height: 2px;
     border-radius: 3px;
     opacity: 1;
@@ -369,8 +221,7 @@ html .section__content .underline-link:hover:after {
     transform: translateY(-2px)
 }
 
-body .arrow-link,
-html .arrow-link {
+.arrow-link {
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     font-weight: 700;
@@ -379,15 +230,14 @@ html .arrow-link {
     white-space: nowrap
 }
 
-body .arrow-link:after,
-html .arrow-link:after {
+.arrow-link:after {
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     position: relative;
     bottom: 2px;
     margin-left: 15px;
     content: '';
-    background: url(../images/Icon_Arrow.png) no-repeat center;
+    background: url(../img/arrow.png) no-repeat center;
     background-size: 100%;
     width: 15px;
     height: 15px;
@@ -395,34 +245,23 @@ html .arrow-link:after {
     vertical-align: middle
 }
 
-body .arrow-link:hover:after,
-html .arrow-link:hover:after {
+.arrow-link:hover:after {
     -webkit-transform: translateX(7px);
     transform: translateX(7px)
 }
 
-body .small,
-html .small {
-    font-family: Inconsolata, monospace;
+.small {
+    font-family: Inconsolata,monospace;
     font-size: .85rem;
     display: inline-block;
     margin-top: 15px
 }
 
-.night .small {
-    font-family: Inconsolata, monospace;
-    font-size: 1.5rem;
-    display: inline-block;
-    margin-top: 15px
-}
-
-body .small:after,
-html .small:after {
+.small:after {
     display: none
 }
 
-body #top-button,
-html #top-button {
+#top-button {
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     background: 0 0;
@@ -436,44 +275,38 @@ html #top-button {
     display: none
 }
 
-@media screen and (max-width:1024px) {
-    body #top-button,
-    html #top-button {
-        bottom: 20px;
+@media screen and (max-width: 1024px) {
+    #top-button {
+        bottom:20px;
         right: 7px;
         width: 35px
     }
 }
 
-@media screen and (max-width:480px) {
-    body #top-button,
-    html #top-button {
-        bottom: 15px;
+@media screen and (max-width: 480px) {
+    #top-button {
+        bottom:15px;
         right: 3px
     }
 }
 
-body #top-button:focus,
-body #top-button:hover,
-html #top-button:focus,
-html #top-button:hover {
+#top-button:focus,#top-button:hover {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px)
 }
 
-body #top-button img,
-html #top-button img {
+#top-button img {
     width: 100%
 }
 
 .waypoint {
     opacity: 0;
-    -webkit-transform: translate3d(0, 20px, 0);
-    transform: translate3d(0, 20px, 0);
-    -webkit-transition: opacity .6s cubic-bezier(.694, 0, .335, 1), -webkit-transform .6s cubic-bezier(.694, 0, .335, 1);
-    transition: opacity .6s cubic-bezier(.694, 0, .335, 1), -webkit-transform .6s cubic-bezier(.694, 0, .335, 1);
-    transition: opacity .6s cubic-bezier(.694, 0, .335, 1), transform .6s cubic-bezier(.694, 0, .335, 1);
-    transition: opacity .6s cubic-bezier(.694, 0, .335, 1), transform .6s cubic-bezier(.694, 0, .335, 1), -webkit-transform .6s cubic-bezier(.694, 0, .335, 1)
+    -webkit-transform: translate3d(0,20px,0);
+    transform: translate3d(0,20px,0);
+    -webkit-transition: opacity .6s cubic-bezier(.694,0,.335,1),-webkit-transform .6s cubic-bezier(.694,0,.335,1);
+    transition: opacity .6s cubic-bezier(.694,0,.335,1),-webkit-transform .6s cubic-bezier(.694,0,.335,1);
+    transition: opacity .6s cubic-bezier(.694,0,.335,1),transform .6s cubic-bezier(.694,0,.335,1);
+    transition: opacity .6s cubic-bezier(.694,0,.335,1),transform .6s cubic-bezier(.694,0,.335,1),-webkit-transform .6s cubic-bezier(.694,0,.335,1)
 }
 
 .in-view {
@@ -482,7 +315,7 @@ html #top-button img {
     transform: translateZ(0)
 }
 
-.pixel-switch-wrapper {
+.switch-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -497,51 +330,50 @@ html #top-button img {
     right: 30px
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width: 480px) {
     .switch-wrapper {
-        top: 10px;
+        top:10px;
         right: 20px
     }
 }
 
-.pixel-switch-wrapper .moon,
-.pixel-switch-wrapper .sun {
+.switch-wrapper .moon,.switch-wrapper .sun {
     width: 17px;
     height: 17px
 }
 
-.pixel-switch-wrapper .sun {
+.switch-wrapper .sun {
     background: url(../img/switch/sun.svg) no-repeat center;
     background-size: 100%
 }
 
-.pixel-switch-wrapper .moon {
+.switch-wrapper .moon {
     background: url(../img/switch/moon.svg) no-repeat center;
     background-size: 100%
 }
 
-.pixel-switch-wrapper .toggle-wrapper {
+.switch-wrapper .toggle-wrapper {
     margin: 10px
 }
 
-.pixel-switch-wrapper .toggle-wrapper #switch {
+.switch-wrapper .toggle-wrapper #switch {
     height: 0;
     width: 0;
     visibility: hidden;
     position: absolute
 }
 
-.pixel-switch-wrapper .toggle-wrapper #switch:checked+label {
+.switch-wrapper .toggle-wrapper #switch:checked+label {
     background: #bae67e
 }
 
-.pixel-switch-wrapper .toggle-wrapper #switch:checked+label:after {
+.switch-wrapper .toggle-wrapper #switch:checked+label:after {
     left: calc(100% - 3px);
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%)
 }
 
-.pixel-switch-wrapper .toggle-wrapper label {
+.switch-wrapper .toggle-wrapper label {
     cursor: pointer;
     text-indent: -9999px;
     width: 45px;
@@ -552,7 +384,7 @@ html #top-button img {
     position: relative
 }
 
-.pixel-switch-wrapper .toggle-wrapper label:after {
+.switch-wrapper .toggle-wrapper label:after {
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     content: '';
@@ -581,110 +413,80 @@ html #top-button img {
     margin: 0 auto
 }
 
-@media screen and (max-width:630px) {
+@media screen and (max-width: 630px) {
     .intro {
-        padding: 120px 70px
+        padding:120px 70px
     }
 }
 
-@media screen and (max-width:550px) {
+@media screen and (max-width: 550px) {
     .intro {
-        padding: 120px 50px
+        padding:120px 50px
     }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width: 480px) {
     .intro {
-        padding: 70px 50px
+        padding:70px 50px
     }
 }
 
-.intro__hello,
-.intro__tagline {
+.intro__hello,.intro__tagline {
     font-size: 2.5rem
 }
 
-.night .intro__hello,
-.night .intro__tagline {
-    font-size: 4rem
-}
-
-@media screen and (max-width:1024px) {
-    .intro__hello,
-    .intro__tagline {
-        font-size: 2.25rem
-    }
-
-    .night .intro__hello,
-    .night .intro__tagline {
-        font-size: 3.5rem
+@media screen and (max-width: 1024px) {
+    .intro__hello,.intro__tagline {
+        font-size:2.25rem
     }
 }
 
-@media screen and (max-width:768px) {
-    .intro__hello,
-    .intro__tagline {
-        font-size: 2rem
-    }
-
-    .night .intro__hello,
-    .night .intro__tagline {
-        font-size: 3rem
+@media screen and (max-width: 768px) {
+    .intro__hello,.intro__tagline {
+        font-size:2rem
     }
 }
 
-@media screen and (max-width:550px) {
-    .intro__hello,
-    .intro__tagline {
-        font-size: 1.75rem
+@media screen and (max-width: 550px) {
+    .intro__hello,.intro__tagline {
+        font-size:1.75rem
     }
 }
 
-@media screen and (max-width:360px) {
-    .intro__hello,
-    .intro__tagline {
-        font-size: 1.5rem
+@media screen and (max-width: 360px) {
+    .intro__hello,.intro__tagline {
+        font-size:1.5rem
     }
 }
 
-@media screen and (max-width:330px) {
-    .intro__hello,
-    .intro__tagline {
-        font-size: 1.4rem
-    }
-
-    .night .intro__hello,
-    .night .intro__tagline {
-        font-size: 2.5rem
+@media screen and (max-width: 330px) {
+    .intro__hello,.intro__tagline {
+        font-size:1.4rem
     }
 }
 
-.intro__hello .emoji,
-.intro__tagline .emoji {
+.intro__hello .emoji,.intro__tagline .emoji {
     width: 40px;
     height: 40px
 }
 
-@media screen and (max-width:1024px) {
-    .intro__hello .emoji,
-    .intro__tagline .emoji {
-        width: 35px;
+@media screen and (max-width: 1024px) {
+    .intro__hello .emoji,.intro__tagline .emoji {
+        width:35px;
         height: 35px
     }
 }
 
-@media screen and (max-width:768px) {
-    .intro__hello .emoji,
-    .intro__tagline .emoji {
-        width: 30px;
+@media screen and (max-width: 768px) {
+    .intro__hello .emoji,.intro__tagline .emoji {
+        width:30px;
         height: 30px
     }
 }
 
-@media screen and (max-width:360px) {
-    .intro__hello .emoji,
-    .intro__tagline .emoji {
-        width: 25px;
+@media screen and (max-width: 360px) {
+    .intro__hello .emoji,.intro__tagline .emoji {
+        width:25px;
         height: 25px
     }
 }
@@ -716,26 +518,32 @@ html #top-button img {
         -webkit-transform: none;
         transform: none
     }
+
     15% {
-        -webkit-transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -10deg);
-        transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -10deg)
+        -webkit-transform: translate3d(-20%,0,0) rotate3d(0,0,1,-10deg);
+        transform: translate3d(-20%,0,0) rotate3d(0,0,1,-10deg)
     }
+
     30% {
-        -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 7deg);
-        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 7deg)
+        -webkit-transform: translate3d(10%,0,0) rotate3d(0,0,1,7deg);
+        transform: translate3d(10%,0,0) rotate3d(0,0,1,7deg)
     }
+
     45% {
-        -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -10deg);
-        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -10deg)
+        -webkit-transform: translate3d(-15%,0,0) rotate3d(0,0,1,-10deg);
+        transform: translate3d(-15%,0,0) rotate3d(0,0,1,-10deg)
     }
+
     60% {
-        -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 5deg);
-        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 5deg)
+        -webkit-transform: translate3d(10%,0,0) rotate3d(0,0,1,5deg);
+        transform: translate3d(10%,0,0) rotate3d(0,0,1,5deg)
     }
+
     75% {
-        -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -2deg);
-        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -2deg)
+        -webkit-transform: translate3d(-5%,0,0) rotate3d(0,0,1,-2deg);
+        transform: translate3d(-5%,0,0) rotate3d(0,0,1,-2deg)
     }
+
     to {
         -webkit-transform: none;
         transform: none
@@ -747,56 +555,41 @@ html #top-button img {
         -webkit-transform: none;
         transform: none
     }
+
     15% {
-        -webkit-transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -10deg);
-        transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -10deg)
+        -webkit-transform: translate3d(-20%,0,0) rotate3d(0,0,1,-10deg);
+        transform: translate3d(-20%,0,0) rotate3d(0,0,1,-10deg)
     }
+
     30% {
-        -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 7deg);
-        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 7deg)
+        -webkit-transform: translate3d(10%,0,0) rotate3d(0,0,1,7deg);
+        transform: translate3d(10%,0,0) rotate3d(0,0,1,7deg)
     }
+
     45% {
-        -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -10deg);
-        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -10deg)
+        -webkit-transform: translate3d(-15%,0,0) rotate3d(0,0,1,-10deg);
+        transform: translate3d(-15%,0,0) rotate3d(0,0,1,-10deg)
     }
+
     60% {
-        -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 5deg);
-        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 5deg)
+        -webkit-transform: translate3d(10%,0,0) rotate3d(0,0,1,5deg);
+        transform: translate3d(10%,0,0) rotate3d(0,0,1,5deg)
     }
+
     75% {
-        -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -2deg);
-        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -2deg)
+        -webkit-transform: translate3d(-5%,0,0) rotate3d(0,0,1,-2deg);
+        transform: translate3d(-5%,0,0) rotate3d(0,0,1,-2deg)
     }
+
     to {
         -webkit-transform: none;
         transform: none
     }
 }
 
-.intro__wrap {
-    max-width: 1000px;
-    position: relative;
-}
-
-.intro__wrap .intro__icon {
-    float: right;
-}
-    
-.intro__wrap .intro__tagline {
-    line-height: 50px;
-}
-
-@media screen and (max-width:550px) {
-    .intro__wrap .intro__icon {
-        float: none;
-        display: none;
-    }
-}
-
 .intro__tagline {
     font-weight: 300;
-    max-width: 700px;
-    position: relative;
+    max-width: 700px
 }
 
 .intro__tagline .name {
@@ -807,39 +600,14 @@ html #top-button img {
     background-image: url(../img/emojis/technologist.png)
 }
 
-@media screen and (max-width:900px) {
-    .intro__tagline {
-        max-width: 500px;
-    }
-}
-
-.intro__icon {    
-    image-rendering: -moz-crisp-edges;
-    image-rendering: -webkit-crisp-edges;
-    image-rendering: smooth;
-    image-rendering: crisp-edges;
-    width:200px;
-    height:200px;
-}
-
 .intro__contact {
     font-size: 1.25rem;
     font-weight: 400
 }
 
-.night .intro__contact {
-    font-size: 2.25rem;
-    font-weight: 400
-}
-
-@media screen and (max-width:550px) {
+@media screen and (max-width: 550px) {
     .intro__contact {
-        font-size: 1rem
-    }
-
-    .night .intro__contact {
-        font-size: 1.75rem;
-        font-weight: 400
+        font-size:1rem
     }
 }
 
@@ -851,9 +619,9 @@ html #top-button img {
     vertical-align: text-bottom
 }
 
-@media screen and (max-width:550px) {
+@media screen and (max-width: 550px) {
     .intro__contact .emoji.pointer {
-        width: 25px;
+        width:25px;
         height: 25px
     }
 }
@@ -866,13 +634,13 @@ html #top-button img {
     display: inline-block;
     padding: 2px 3px;
     text-decoration: none;
-    -webkit-box-shadow: inset 0 -3px 0 #0099e0;
-    box-shadow: inset 0 -3px 0 #0099e0
+    -webkit-box-shadow: inset 0 -3px 0 #007bff;
+    box-shadow: inset 0 -3px 0 #007bff
 }
 
 .intro__contact .highlight-link:hover {
-    -webkit-box-shadow: inset 0 -33px 0 0 #0099e0;
-    box-shadow: inset 0 -33px 0 0 #0099e0;
+    -webkit-box-shadow: inset 0 -33px 0 0 #007bff;
+    box-shadow: inset 0 -33px 0 0 #007bff;
     color: #fff
 }
 
@@ -885,23 +653,23 @@ html #top-button img {
     justify-content: space-between
 }
 
-@media screen and (max-width:630px) {
+@media screen and (max-width: 630px) {
     .skills .skillz {
-        -ms-flex-wrap: wrap;
+        -ms-flex-wrap:wrap;
         flex-wrap: wrap
     }
 }
 
-@media screen and (max-width:630px) {
+@media screen and (max-width: 630px) {
     .skills .skillz__category {
-        width: 47%;
+        width:47%;
         margin-right: 5px;
         margin-bottom: 25px
     }
 }
 
-.skills .skillz__category__label {	
-	font-family: Apercu, "Source Sans Pro", Helvetica, Arial, sans-serif;
+.skills .skillz__category__label {
+    font-family: Apercu, "Source Sans Pro", Helvetica, Arial, sans-serif;
 	font-size: 15px;
     font-weight: 500;
     color: #36363c;
@@ -912,17 +680,6 @@ html #top-button img {
     margin: 3px 0;
     font-size: .9rem
 }
-
-.night .skills {
-    margin: 3px 0;
-    font-size: 1rem
-}
-
-.night .skillz__category__item {
-    margin: 3px 0;
-    font-size: 1.25rem
-}
-
 
 .experience .jobs {
     margin-bottom: 100px
@@ -941,9 +698,9 @@ html #top-button img {
     justify-content: space-between
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width: 480px) {
     .experience .job .time-place {
-        display: block
+        display:block
     }
 }
 
@@ -953,12 +710,12 @@ html #top-button img {
 
 .experience .job__time {
     font-size: .9rem;
-    font-family: Inconsolata, monospace
+    font-family: Inconsolata,monospace
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width: 480px) {
     .experience .job__time {
-        font-size: .8rem
+        font-size:.8rem
     }
 }
 
@@ -1011,32 +768,36 @@ html #top-button img {
 
 @-webkit-keyframes pulsate {
     0% {
-        -webkit-transform: scale(.1, .1);
-        transform: scale(.1, .1);
+        -webkit-transform: scale(.1,.1);
+        transform: scale(.1,.1);
         opacity: 0
     }
+
     50% {
         opacity: 1
     }
+
     100% {
-        -webkit-transform: scale(1.2, 1.2);
-        transform: scale(1.2, 1.2);
+        -webkit-transform: scale(1.2,1.2);
+        transform: scale(1.2,1.2);
         opacity: 0
     }
 }
 
 @keyframes pulsate {
     0% {
-        -webkit-transform: scale(.1, .1);
-        transform: scale(.1, .1);
+        -webkit-transform: scale(.1,.1);
+        transform: scale(.1,.1);
         opacity: 0
     }
+
     50% {
         opacity: 1
     }
+
     100% {
-        -webkit-transform: scale(1.2, 1.2);
-        transform: scale(1.2, 1.2);
+        -webkit-transform: scale(1.2,1.2);
+        transform: scale(1.2,1.2);
         opacity: 0
     }
 }
@@ -1066,21 +827,21 @@ html #top-button img {
     width: 125%
 }
 
-@media screen and (max-width:1280px) {
+@media screen and (max-width: 1280px) {
     .featured-projects .project {
-        width: 115%
+        width:115%
     }
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
     .featured-projects .project {
-        width: 105%
+        width:105%
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .featured-projects .project {
-        width: 100%;
+        width:100%;
         display: block;
         margin-bottom: 70px
     }
@@ -1134,9 +895,9 @@ html #top-button img {
     margin-left: 30px
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .featured-projects .project__caption {
-        width: 100%;
+        width:100%;
         margin-top: 25px;
         margin-left: 0
     }
@@ -1152,11 +913,6 @@ html #top-button img {
 
 .featured-projects .project p {
     font-size: .85rem;
-    line-height: 1.3
-}
-
-.night .featured-projects .project p {
-    font-size: 1.6rem;
     line-height: 1.3
 }
 
@@ -1177,13 +933,13 @@ html #top-button img {
 .other-projects .project__used__item {
     display: inline-block;
     margin: 3px 3px 3px 0;
-    font-family: Inconsolata, monospace;
+    font-family: Inconsolata,monospace;
     font-size: .75rem;
     font-weight: 700;
     padding: 2px 7px;
     border-radius: 3px;
-    color: #0099e0;
-    border: 1px solid #0099e0;
+    color: #007bff;
+    border: 1px solid #007bff;
     background: 0 0
 }
 
@@ -1204,21 +960,21 @@ html #top-button img {
     align-items: center
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
     .footer {
-        padding: 50px
+        padding:50px
     }
 }
 
-@media screen and (max-width:630px) {
+@media screen and (max-width: 630px) {
     .footer {
-        display: block
+        display:block
     }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width: 480px) {
     .footer {
-        padding: 50px 30px
+        padding:50px 30px
     }
 }
 
@@ -1227,25 +983,23 @@ html #top-button img {
     width: 200px
 }
 
-@media screen and (max-width:630px) {
+@media screen and (max-width: 630px) {
     .footer__copyright {
-        width: auto;
+        width:auto;
         text-align: center;
         margin-bottom: 25px
     }
 }
 
-@media screen and (max-width:630px) {
-    .footer__copyright .bottom,
-    .footer__copyright .top {
-        display: inline-block
+@media screen and (max-width: 630px) {
+    .footer__copyright .bottom,.footer__copyright .top {
+        display:inline-block
     }
 }
 
-@media screen and (max-width:480px) {
-    .footer__copyright .bottom,
-    .footer__copyright .top {
-        display: block
+@media screen and (max-width: 480px) {
+    .footer__copyright .bottom,.footer__copyright .top {
+        display:block
     }
 }
 
@@ -1256,9 +1010,9 @@ html #top-button img {
     vertical-align: text-bottom
 }
 
-@media screen and (max-width:630px) {
+@media screen and (max-width: 630px) {
     .footer__links {
-        display: -webkit-box;
+        display:-webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: center;
@@ -1270,16 +1024,16 @@ html #top-button img {
 .footer__links a {
     position: relative;
     display: inline-block;
-    color: #0099e0 !important;
+    color: #007bff!important;
     text-transform: uppercase;
     font-weight: 700;
     margin: 0 15px;
     outline: 0
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
     .footer__links a {
-        margin: 0 10px
+        margin:0 10px
     }
 }
 
@@ -1289,25 +1043,24 @@ html #top-button img {
     left: 0;
     width: 100%;
     height: 1px;
-    background: #0099e0;
+    background: #007bff;
     content: '';
     opacity: 0;
-    -webkit-transition: height .3s, opacity .3s, -webkit-transform .3s;
-    transition: height .3s, opacity .3s, -webkit-transform .3s;
-    transition: height .3s, opacity .3s, transform .3s;
-    transition: height .3s, opacity .3s, transform .3s, -webkit-transform .3s;
+    -webkit-transition: height .3s,opacity .3s,-webkit-transform .3s;
+    transition: height .3s,opacity .3s,-webkit-transform .3s;
+    transition: height .3s,opacity .3s,transform .3s;
+    transition: height .3s,opacity .3s,transform .3s,-webkit-transform .3s;
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px)
 }
 
-@media screen and (max-width:850px) {
+@media screen and (max-width: 850px) {
     .footer__links a:after {
-        display: none
+        display:none
     }
 }
 
-.footer__links a:focus:after,
-.footer__links a:hover:after {
+.footer__links a:focus:after,.footer__links a:hover:after {
     height: 2px;
     border-radius: 3px;
     opacity: 1;
@@ -1321,9 +1074,9 @@ html #top-button img {
     letter-spacing: 1px
 }
 
-@media screen and (max-width:850px) {
+@media screen and (max-width: 850px) {
     .footer__links a .text {
-        display: none
+        display:none
     }
 }
 
@@ -1332,20 +1085,15 @@ html #top-button img {
     width: 22px
 }
 
-.footer__links svg {
-    display: none;
-    width: 22px
-}
-
-@media screen and (max-width:850px) {
-    .footer__links svg {
-        display: inline-block
+@media screen and (max-width: 850px) {
+    .footer__links img {
+        display:inline-block
     }
 }
 
 .not-found {
     width: 100%;
-    height: 100vh;
+    height: 100vh!important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1368,13 +1116,13 @@ html #top-button img {
     top: 25px;
     left: 30px;
     font-weight: 700;
-    color: #0099e0;
+    color: #007bff;
     font-size: 1.5rem
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width: 480px) {
     .not-found .name {
-        top: 20px;
+        top:20px;
         left: 25px;
         font-size: 1.25rem
     }
@@ -1389,21 +1137,21 @@ html #top-button img {
     font-size: 1.5rem
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width: 480px) {
     .not-found h2 {
-        font-size: 1.25rem
+        font-size:1.25rem
     }
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width: 360px) {
     .not-found h2 {
-        font-size: 1.1rem
+        font-size:1.1rem
     }
 }
 
 .not-found a {
     font-weight: 700;
-    color: #0099e0 !important;
+    color: #007bff!important;
     position: relative;
     display: inline-block
 }
@@ -1414,113 +1162,20 @@ html #top-button img {
     left: 0;
     width: 100%;
     height: 3px;
-    background: #0099e0;
+    background: #007bff;
     content: '';
     opacity: 0;
-    -webkit-transition: height .3s, opacity .3s, -webkit-transform .3s;
-    transition: height .3s, opacity .3s, -webkit-transform .3s;
-    transition: height .3s, opacity .3s, transform .3s;
-    transition: height .3s, opacity .3s, transform .3s, -webkit-transform .3s;
+    -webkit-transition: height .3s,opacity .3s,-webkit-transform .3s;
+    transition: height .3s,opacity .3s,-webkit-transform .3s;
+    transition: height .3s,opacity .3s,transform .3s;
+    transition: height .3s,opacity .3s,transform .3s,-webkit-transform .3s;
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px)
 }
 
-.not-found a:focus:after,
-.not-found a:hover:after {
+.not-found a:focus:after,.not-found a:hover:after {
     height: 3px;
     opacity: 1;
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px)
-}
-
-* {
-  box-sizing: border box;
-}
-.center {
-  float: left;
-}
-.btn,
-button {
-  font-family: Apercu, "Source Sans Pro", Helvetica, Arial, sans-serif;
-  background: #444452;
-  border: none;
-  font-size: 10px;
-  font-size: 1rem;  
-  font-weight: 400;
-  letter-spacing: 3px;
-  background-color: #444452;
-  color: white;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  padding: 14px 21px;
-  padding: 1.4rem 2.1rem;
-  border: 2px solid #444452;
-  transition: color 0.1s cubic-bezier(0.16, 0.08, 0.355, 1), background 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);
-  display: inline-block;
-  cursor: pointer;
-  width: 100%;
-  min-width: 180px;
-  min-width: 18rem;
-  outline: none;
-  vertical-align: middle;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-@media (min-width: 400px) {
-  .btn,
-  button {
-    width: auto;
-  }
-}
-@media (min-width: 800px) {
-  .btn,
-  button {
-    font-size: 1.1rem;
-    padding: 1.2rem 1.2rem;
-  }
-}
-.btn:hover,
-button:hover {
-  background: #444452;
-  border-color: #444452;
-  color: #fff;
-}
-.btn-border {
-  background-color: transparent;
-  color: #444452;
-}
-.btn-arrow {
-  position: relative;
-  transition: background-color 300ms ease-out;
-}
-.btn-arrow span {
-  display: inline-block;
-  position: relative;
-  transition: all 300ms ease-out;
-  will-change: transform;
-}
-.btn-arrow:hover span {
-  -webkit-transform: translate3d(-1rem, 0, 0);
-          transform: translate3d(-1rem, 0, 0);
-}
-.btn-arrow svg {
-  position: absolute;
-  width: 1.1em;
-  right: 0px;
-  right: 0rem;
-  opacity: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  transition: all 300ms ease-out;
-  will-change: right, opacity;
-}
-.btn-arrow svg * {
-  stroke-width: 5;
-  stroke-color: transparent;
-}
-.btn-arrow:hover svg {
-  opacity: 1;
-  right: -2rem;
 }

@@ -7,6 +7,8 @@
 	<meta name="author" content="Erik Scerri">
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/button.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 
@@ -210,19 +212,71 @@
 		<section class="section featured-projects">
 			<div class="section__title">Featured Projects</div>
 			<div class="section__content">
-				<!--<div class="project blistabloc">
+				<div class="project pacman">
+					<!--<figure class="project__pic">-->
+						<div style="width: 100%; height: 0px; position: relative; padding-bottom: 46.250%;display:block;overflow:visible;margin:0">
+						<iframe src="https://streamable.com/s/piofz/huqcw" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe>
+						</div>					
+						<!--<a href="https://streamable.com/piofz" target="_blank">
+							<img src="img/pacman.png" alt="">
+						</a>-->
+					<!--</figure>-->
+					<figcaption class="project__caption">
+						<div class="project__name">
+							<a href="https://bitbucket.org/StepW/pacman/src/master/" target="_blank">PAC-MAN Adaptive Game Audio</a>
+						</div>
+						<p>Custom audio engine for PAC-MAN, built in Unity. Switches dynamically at smooth transition points to create a fluid soundtrack influenced by in-game triggers. Soundtrack by Erik Scerri & Stephan Wells.</p>
+					</figcaption>
+				</div>
+				<div class="project jutr">
+					<figure class="project__pic phones">
+                            <a href="https://www.decos.com/product/fixi/" target="_blank">
+                                <div class="phone">
+                                    <img src="img/jutr1.png" alt="">
+                                </div>
+                                <div class="phone">
+                                    <img src="img/jutr2.png" alt="">
+                                </div>
+                                <div class="phone">
+                                    <img src="img/jutr3.png" alt="">
+                                </div>
+                            </a>
+                        </figure>
+					<figcaption class="project__caption">
+						<div class="project__name">
+							<a href="https://www.decos.com/product/fixi/" target="_blank">JUTR</a>
+						</div>
+						<p>Geo-tagging mobile game with Augmented Reality treasure hiding mechanics, built in Unity. Created in collaboration with students from HKU as a prototype project for the Fixi product by Decos. </p>
+					</figcaption>
+				</div>
+				<div class="project voxel">
+					<!--<figure class="project__pic">-->						
+						<div style="width: 100%; height: 0px; position: relative; padding-bottom: 46.250%;display:block;overflow:visible;margin:0">
+						<iframe src="https://streamable.com/s/fk742/iavzc" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe>
+						</div>
+					
+						<!--<a href="https://streamable.com/fk742" target="_blank">
+							<img src="img/voxeltrack.png" alt="">
+						</a>-->
+					<!--</figure>-->
+					<figcaption class="project__caption">
+						<div class="project__name">
+							<a href="https://gitlab.com/ErikScerri/INFOMCV_P3" target="_blank">Voxel-based 3D Reconstruction</a>
+						</div>
+						<p>Dynamically creating 3D voxel shapes from multi-camera recordings of multiple moving subjects in a fixed space. Involves CV techniques such as background removal and image-based 3D reconstruction.</p>
+					</figcaption>
+				</div>			
+				<div class="project tankgame">
 					<figure class="project__pic">
-						<a href="https://blistabloc.com/" target="_blank">
-							<img src="/img/featured/blistabloc/blistabloc.png" alt="">
-						</a>
+							<img src="img/tankgame.png" alt="">
 					</figure>
 					<figcaption class="project__caption">
 						<div class="project__name">
-							<a href="https://blistabloc.com/" target="_blank">blistabloc</a>
+							<a href="https://gitlab.com/ErikScerri/infomov_p4" target="_blank">Optimising RTS Game Simulations</a>
 						</div>
-						<p>Custom wordpress theme built with Timber and Woocommerce for blistabloc, the only reactive shoe insert that prevents blisters from forming.</p>
+						<p>Refactoring linear code into SIMD code and converting CPU code into GPU kernels to optimise a simple RTS simulation with a 100+ independent game agents performing basic actions (movement & combat) in a game world. </p>
 					</figcaption>
-				</div>-->
+				</div>
 			</div>
 		</section>
 	
