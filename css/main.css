@@ -9,11 +9,11 @@ html {
 }
 
 ::-moz-selection {
-    background: #ffdc00
+    background: #eeb507
 }
 
 ::selection {
-    background: #ffdc00
+    background: #eeb507
 }
 
 body,html {
@@ -22,7 +22,7 @@ body,html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #fff;
-    color: #444452;
+    color: #333f58;
     font-family: Raleway, "Source Sans Pro", Helvetica, Arial, sans-serif;
     line-height: 1.5;
     width: 100%
@@ -35,12 +35,12 @@ body.night,html.night {
 
 body.night ::-moz-selection,html.night ::-moz-selection {
     color: #36363c;
-    background: #ffdc00
+    background: #eeb507
 }
 
 body.night ::selection,html.night ::selection {
     color: #36363c;
-    background: #ffdc00
+    background: #eeb507
 }
 
 body.night .switch-wrapper .sun,html.night .switch-wrapper .sun {
@@ -140,7 +140,7 @@ strong {
 	font-size: 15px;
     width: 200px;
     margin-right: 70px;
-    color: #0099e0;
+    color: #009ae1;
     text-transform: uppercase;
     text-align: right;
     font-weight: 500;
@@ -634,13 +634,13 @@ strong {
     display: inline-block;
     padding: 2px 3px;
     text-decoration: none;
-    -webkit-box-shadow: inset 0 -3px 0 #007bff;
-    box-shadow: inset 0 -3px 0 #007bff
+    -webkit-box-shadow: inset 0 -3px 0 #009ae1;
+    box-shadow: inset 0 -3px 0 #009ae1
 }
 
 .intro__contact .highlight-link:hover {
-    -webkit-box-shadow: inset 0 -33px 0 0 #007bff;
-    box-shadow: inset 0 -33px 0 0 #007bff;
+    -webkit-box-shadow: inset 0 -33px 0 0 #009ae1;
+    box-shadow: inset 0 -33px 0 0 #009ae1;
     color: #fff
 }
 
@@ -938,8 +938,8 @@ strong {
     font-weight: 700;
     padding: 2px 7px;
     border-radius: 3px;
-    color: #007bff;
-    border: 1px solid #007bff;
+    color: #009ae1;
+    border: 1px solid #009ae1;
     background: 0 0
 }
 
@@ -979,7 +979,8 @@ strong {
 }
 
 .footer__copyright {
-    font-weight: 700;
+	font-size: 15px;
+    font-weight: 500;
     width: 200px
 }
 
@@ -1024,7 +1025,7 @@ strong {
 .footer__links a {
     position: relative;
     display: inline-block;
-    color: #007bff!important;
+    color: #009ae1!important;
     text-transform: uppercase;
     font-weight: 700;
     margin: 0 15px;
@@ -1043,7 +1044,7 @@ strong {
     left: 0;
     width: 100%;
     height: 1px;
-    background: #007bff;
+    background: #009ae1;
     content: '';
     opacity: 0;
     -webkit-transition: height .3s,opacity .3s,-webkit-transform .3s;
@@ -1116,7 +1117,7 @@ strong {
     top: 25px;
     left: 30px;
     font-weight: 700;
-    color: #007bff;
+    color: #009ae1;
     font-size: 1.5rem
 }
 
@@ -1151,7 +1152,7 @@ strong {
 
 .not-found a {
     font-weight: 700;
-    color: #007bff!important;
+    color: #009ae1!important;
     position: relative;
     display: inline-block
 }
@@ -1162,7 +1163,7 @@ strong {
     left: 0;
     width: 100%;
     height: 3px;
-    background: #007bff;
+    background: #009ae1;
     content: '';
     opacity: 0;
     -webkit-transition: height .3s,opacity .3s,-webkit-transform .3s;
