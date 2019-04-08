@@ -639,7 +639,7 @@ strong {
     float: right;
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:1000px) {
     .intro__wrap .intro__icon {
         float: none;
         display: none;
