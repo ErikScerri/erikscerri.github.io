@@ -29,7 +29,7 @@ body,html {
 }
 
 body.night,html.night {
-    background-color: #171c28;
+    background-color: #172a45;
     color: #afafbf
 }
 
@@ -88,7 +88,7 @@ img {
 
 strong {
     font-weight: 700;
-    color: #36363c
+    color: #172a45
 }
 
 .emoji {
@@ -191,24 +191,6 @@ strong {
     margin-bottom: 25px
 }
 
-.section__content a {
-	-webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    font-weight: 400;
-    text-decoration: none;
-    display: inline-block;
-    padding: 2px 3px;
-    text-decoration: none;
-    -webkit-box-shadow: inset 0 -3px 0 #009ae1;
-    box-shadow: inset 0 -3px 0 #009ae1
-}
-
-.section__content a:hover {
-	-webkit-box-shadow: inset 0 -33px 0 0 #009ae1;
-    box-shadow: inset 0 -33px 0 0 #009ae1;
-    color: #fff
-}
-
 .section__content .underline-link {
     position: relative;
     display: inline-block
@@ -237,6 +219,49 @@ strong {
     opacity: 1;
     -webkit-transform: translateY(-2px);
     transform: translateY(-2px)
+}
+
+.background__content {
+    font-weight: 300;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 650px
+}
+
+@media screen and (max-width: 768px) {
+    .background__content {
+        padding-top:30px;
+        padding-left: 50px
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .background__content {
+        padding-left:30px
+    }
+}
+
+.background__content p {
+    margin-top: 0;
+    margin-bottom: 25px
+}
+
+.background__content a {
+	-webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 3px;
+    text-decoration: none;
+    -webkit-box-shadow: inset 0 -3px 0 #009ae1;
+    box-shadow: inset 0 -3px 0 #009ae1
+}
+
+.background__content a:hover {
+	-webkit-box-shadow: inset 0 -33px 0 0 #009ae1;
+    box-shadow: inset 0 -33px 0 0 #009ae1;
+    color: #fff
 }
 
 .arrow-link {
@@ -605,9 +630,25 @@ strong {
     }
 }
 
+.intro__wrap {
+    max-width: 1500px;
+    position: relative;
+}
+
+.intro__wrap .intro__icon {
+    float: right;
+}
+
+@media screen and (max-width:550px) {
+    .intro__wrap .intro__icon {
+        float: none;
+        display: none;
+    }
+}
+
 .intro__tagline {
     font-weight: 300;
-    max-width: 700px
+    max-width: 1000px
 }
 
 .intro__tagline .name {
@@ -616,6 +657,16 @@ strong {
 
 .intro__tagline .technologist {
     background-image: url(../img/emojis/technologist.png)
+}
+
+.intro__icon {
+	vertical-align: top;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    width:600px;
+    height:600px;
 }
 
 .intro__contact {
